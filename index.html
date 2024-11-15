@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lettera di Novembre</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #6f4f37; /* Colore marrone autunnale */
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 24px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 30px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #6f4f37;
+        }
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #333;
+        }
+        button {
+            background-color: #6f4f37;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #8e6c4e;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    Lettera del Prof. Novembre
+</header>
+
+<div class="container">
+    <h2>Caro 5° anno,</h2>
+    <p id="lettera">
+        Voglio iniziare questo mese di novembre con una piccola riflessione. 
+        Oggi, durante la lezione di Git, una delle più importanti dell'anno,
+        la sala era vuota. Non voglio dire che mi aspettavo la presenza di tutti,
+        ma almeno più di qualcuno! Vi avevo avvisato che sarebbe stata una lezione fondamentale
+        per il vostro futuro professionale, eppure, niente. La mia fiducia nei vostri confronti
+        vacilla quando vedo così poco impegno. Ricordatevi che non si può imparare solo nei momenti facili,
+        e Git è uno strumento che vi servirà anche fuori da questa aula.
+    </p>
+    <button onclick="ingrandisci()">Clicca per ingrandire la lamentela</button>
+</div>
+
+<script>
+    function ingrandisci() {
+        var lettera = document.getElementById("lettera");
+        lettera.style.fontSize = "24px"; // Aumenta la dimensione del testo
+    }
+</script>
+
+</body>
+</html>
